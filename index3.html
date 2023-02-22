@@ -11,19 +11,41 @@
   <!-- 구구단을 만들어보자 -->
   <script>
     let root = document.getElementById("root");
-    let ggd = 13
+
+
+    //구구단 단 수
+    let ggd = 100
+
+
+    //반복문 시작
     for(let ui = 0; ui < ggd; ui++) {
+
+
+      //root인 div안에 ol 넣기
       let ol = document.createElement("ol")
       ol.textContent = (ui+1)+"단";
       root.appendChild(ol);
+      
+
+      //ol 스타일시트
+      ol.style.border="1px";
+      ol.style.borderColor="black";
+      
+
+      //li로 안에 내용물 넣기
       for(let i = 0; i < ggd; i++){
         let li = document.createElement("li")
         li.textContent = (ui+1)*(i+1);
         ol.appendChild(li);
       }
     }
-    console.dir(root)
+
     
+    //root 스타일시트
+    root.style.width="100vw";
+    root.style.display= "flex";
+    root.style.flexWrap="wrap";
+    root.style.boxSizing="border-box";
   </script>
 </body>
 </html>
