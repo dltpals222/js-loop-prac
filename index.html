@@ -10,11 +10,20 @@
 <div id="root"></div>
 <script>
   let pokemon = ["피카츄","라이츄","파이리","꼬부기","버터풀","야도란"]
-  let root1 = window["document"].getElementById["root"];
-  let root2 = document.getElementById["root"];
-  console.log(root)
-  let a = window;
-  console.log(a);
+  let root = document.getElementById["root"];
+  let a = 0;
+  for (
+    //숫자 0을 index라는 언어에 담았다. index에 숫자 0을 할당했다.
+    let index = 0; 
+    //비교연산을 하고있다.
+    index < pokemon.length; 
+    //index에 +1을 더해서 index에 담았다. 컴퓨터에 인덱스를
+    index = index + 1
+    ){ 
+      //중괄호는 실행구문
+      console.log(pokemon[index])
+  }
+
 </script>
 </body>
 </html>
